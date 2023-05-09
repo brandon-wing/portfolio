@@ -17,6 +17,10 @@ function Container(){
             element={<About />}
             />
             <Route
+            path="/about"
+            element={<About />}
+            />
+            <Route
             path="/resume"
             element={<Resume />}
             />
