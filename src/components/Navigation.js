@@ -1,7 +1,8 @@
 import React from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
-function Navigation({ currentPage, handlePageChange }) {
+function Navigation() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
@@ -9,15 +10,10 @@ function Navigation({ currentPage, handlePageChange }) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            
-            <Nav.Link href="#about-me"
-            onClick={() => handlePageChange('About')}
-            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-            >About Me</Nav.Link>
-
-            <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="#resume">Resume</Nav.Link>
+          <Nav.Link as={NavLink} to="/about">About Me</Nav.Link>
+            <Nav.Link as={NavLink} to="/portfolio">Portfolio</Nav.Link>
+            <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
+            <Nav.Link as={NavLink} to="/resume">Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

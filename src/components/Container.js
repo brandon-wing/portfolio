@@ -1,9 +1,14 @@
 import React from "react";
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './Header';
+import Footer from './Footer';
+import About from "./pages/About";
+import Resume from "./pages/Resume";
+import Portfolio from "./pages/Portfolio";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Contact from "./pages/Contact";
 
-const Container = () => {
+function Container(){
+    return (
     <Router>
         <Header />
         <Routes>
@@ -21,10 +26,10 @@ const Container = () => {
             />
             <Route
             path="/portfolio"
-            element={<Porfolio />}
+            element={<Portfolio />}
             />
         </Routes>
         <Footer />
     </Router>
-}
-export default Container
+)}
+export default Container;
