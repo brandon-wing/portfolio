@@ -2,10 +2,9 @@ import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import avatar from '../../images/avatar.jpeg';
 
-
 const About = () => {
   return (
-    <Container className="pt-5">
+    <Container fluid className="pt-3 pb-3 specific-section">
       <Row>
         <Col xs={12} md={4}>
         <Image src={avatar} rounded fluid />

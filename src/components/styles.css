@@ -1,0 +1,38 @@
+.navbar {
+  background-color: #283044ff !important;
+}
+.nav-link.active {
+    background-color: #78a1bbff;
+    color: #ebf5eeff;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: bounce 0.5s ease-in-out;
+  }
+
+  .specific-section{
+    background-color: #EBF5EE !important;
+    border: 3px #BFA89E;;
+  }
+ 
+
+  .iconlink:hover {
+    color: #8b786d !important;
+    animation: bounce 0.5s ease-in-out;
+  }
+
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .footer {
+    background-color: #283044ff !important;
+  }

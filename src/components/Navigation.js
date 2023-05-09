@@ -2,12 +2,13 @@ import React from 'react';
 import { useEffect } from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { NavLink, useLocation } from 'react-router-dom';
+import './styles.css'
 
 function Navigation() {
     const location = useLocation();
     useEffect(() => {
       const aboutLink = document.querySelector('a[href="/about"]');
-      if (location.pathname === '/' || '/about') {
+      if (location.pathname === '/' || location.pathname ==='/about') {
         aboutLink.classList.add('active');
       } else {
         aboutLink.classList.remove('active');
