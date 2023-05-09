@@ -4,18 +4,20 @@ import { Nav, Navbar, Container } from 'react-bootstrap';
 import { NavLink, useLocation } from 'react-router-dom';
 
 function Navigation() {
-  const location = useLocation();
-
-  useEffect(() => {
-    const aboutLink = document.querySelector('a[href="/about"]');
-    if (location.pathname === '/') {
-      aboutLink.classList.add('active');
-    }
-  }, [location.pathname]);
-  return (
+    const location = useLocation();
+    useEffect(() => {
+      const aboutLink = document.querySelector('a[href="/about"]');
+      if (location.pathname === '/' || '/about') {
+        aboutLink.classList.add('active');
+      } else {
+        aboutLink.classList.remove('active');
+      }
+    }, [location.pathname]);
+  
+    return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="/">Brandon Wing</Navbar.Brand>
+        <Navbar.Brand >Brandon Wing</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
