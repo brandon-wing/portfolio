@@ -1,5 +1,9 @@
-.navbar {
-  background-color: #283044ff !important;
+#root {
+  height: 100%;
+  background-color: #EBF5EE !important;
+}
+.top-navbar {
+  background-color:#283044ff!important;
 }
 .nav-link.active {
     background-color: #78a1bbff;
@@ -11,7 +15,36 @@
 
   .specific-section{
     background-color: #EBF5EE !important;
-    border: 3px #BFA89E;;
+    border: 3px #BFA89E;
+  }
+
+  .projectcard{
+    background-color: #283044ff !important;
+  }
+  .card-title{
+    color: #EBF5EE;
+  }
+
+  .card-description{
+    color: #EBF5EE;
+  }
+  
+  .card-button{
+    color: #EBF5EE !important;
+    text-decoration: none;
+  }
+  .card-button:hover{
+    color: #78a1bbff!important;
+    text-decoration: none;
+  }
+
+  .projectpic {
+    height: 300px;
+  }
+  
+
+  p {
+font-weight: bold;
   }
  
 
@@ -36,3 +69,4 @@
   .footer {
     background-color: #283044ff !important;
   }
+

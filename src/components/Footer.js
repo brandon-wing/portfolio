@@ -5,7 +5,7 @@ import './styles.css'
 
 function Footer() {
   return (
-    <Container fluid className="pt-5 bg-dark text-white py-3 footer">
+    <Container fluid className="pt-5 text-white py-3 footer">
       <Row>
         <Col xs={12} md={12}>
           <div className="d-flex justify-content-center">

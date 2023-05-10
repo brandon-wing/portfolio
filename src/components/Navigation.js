@@ -16,9 +16,9 @@ function Navigation() {
     }, [location.pathname]);
   
     return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" variant="dark" className="top-navbar">
       <Container>
-        <Navbar.Brand>Brandon Wing</Navbar.Brand>
+        <Navbar.Brand >Brandon Wing</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
