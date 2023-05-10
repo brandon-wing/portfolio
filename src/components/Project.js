@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { FaGithub } from 'react-icons/fa';
+import './styles.css'
 
 
 const Project = (props) => {

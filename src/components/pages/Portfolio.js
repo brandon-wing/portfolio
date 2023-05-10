@@ -6,6 +6,7 @@ import Project3 from '../../images/project3.png';
 import Project4 from '../../images/project4.png';
 import Project5 from '../../images/project5.png';
 import Project6 from '../../images/project6.png';
+import '../../components/styles.css'
 const Portfolio = () => {
   const projects = [
     {

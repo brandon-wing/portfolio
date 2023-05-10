@@ -6,6 +6,7 @@ import Resume from "./pages/Resume";
 import Portfolio from "./pages/Portfolio";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Contact from "./pages/Contact";
+import './styles.css'
 
 function Container(){
     return (
