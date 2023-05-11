@@ -10,27 +10,27 @@ import './styles.css'
 
 function Container(){
     return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
         <Header />
         <Routes>
-        <Route 
-            exact path="/" 
-            element={<About />} />
+            <Route 
+                path="/" 
+                element={<About />} />
             <Route
-            path="/about"
-            element={<About />}
+                path="/about"
+                element={<About />}
             />
             <Route
-            path="/resume"
-            element={<Resume />}
+                path="/resume"
+                element={<Resume />}
             />
             <Route
-            path="/contact"
-            element={<Contact />}
+                path="/contact"
+                element={<Contact />}
             />
             <Route
-            path="/portfolio"
-            element={<Portfolio />}
+                path="/portfolio"
+                element={<Portfolio />}
             />
         </Routes>
         <Footer />
