@@ -17,7 +17,7 @@ const Header = () => {
         <div className="mask">
           <div className="d-flex justify-content-center align-items-center h-100">
             <div className="text-white">
-            <h1 className="mb-3" style={{fontSize: '5rem'}}>BRANDON WING: DEVELOPER IN TRAINING</h1>
+            <h1 className="mb-3" style={{fontSize: '5rem'}}>BRANDON WING: WEB DEVELOPER</h1>
             </div>
           </div>
         </div>

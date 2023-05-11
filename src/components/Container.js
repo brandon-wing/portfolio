@@ -13,10 +13,9 @@ function Container(){
     <Router>
         <Header />
         <Routes>
-            <Route
-            path="/"
-            element={<About />}
-            />
+        <Route 
+            exact path="/" 
+            element={<About />} />
             <Route
             path="/about"
             element={<About />}
