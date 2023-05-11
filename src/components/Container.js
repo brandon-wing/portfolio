@@ -10,7 +10,7 @@ import './styles.css'
 
 function Container(){
     return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
         <Header />
         <Routes>
             <Route 
